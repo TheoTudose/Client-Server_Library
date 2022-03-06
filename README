@@ -1,0 +1,21 @@
+Tema 3 PC
+Tudose Theodor-Mihai 321CAb
+### Implementarea clientului de HTTP
+- Se afla in fisierul "request.cpp".
+- Functia send_buffer ia ca argument adressa de ip si portul serverului de HTTP cu care v-a comunica. Functia intoarce un std::string care contine raspunsul de la server.
+- Functia format_request formateaza corespunzator requestul HTTP.
+- Functia parse_response extrage headerele si body-ul din raspunsul primit de la server.
+- Functia request realizeaza requestul in sine.
+
+### Comunicarea cu API-ul
+- Se afla in fisierul "actions.cpp".
+- Clasa "Response" este un wrapper peste std::string care tine cont de errori.
+- Restul functilor corespund cu routele acesibile pe serverul de HTTP.
+
+### Input-ul utilizatorului
+- Se afla in fisierul "commands.cpp"
+- Functia match ia ca argument tipul comenzii, si cere utilizatorului datele corespunzatoare.
+- Functia exec executa commanda corespunzatoare.
+
+### Biblioteca de parsat JSON
+- Am ales biblioteca nlohmann pentru parsarea JSON deoarece foloseste feature-urile din cpp pentru a face utiliarea acesteia mai usoara.
